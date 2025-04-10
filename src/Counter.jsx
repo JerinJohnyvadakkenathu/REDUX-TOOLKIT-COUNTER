@@ -13,7 +13,7 @@ const Counter=()=>{
             <input 
             type="number"
             value={amount}
-            onChange={(e)=>setAmount(e.target.amount)}
+            onChange={(e)=>setAmount(Number(e.target.amount))}
              />
              <button onClick={()=>dispatch(incrementByAmount(amount))}></button>
             </>
